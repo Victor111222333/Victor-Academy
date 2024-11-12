@@ -1,0 +1,406 @@
+
+        /* Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            min-height: 100vh;
+            width: 100%;
+            background: linear-gradient(#B1DFE5,#336978);
+            position: relative;
+        }
+
+        nav {
+            display: flex;
+            padding: 2% 6%;
+            justify-content: space-between;
+            align-items: center;
+            left: 150%;
+        }
+
+        nav img {
+            width: 150px;
+        }
+
+        .nav-links {
+            margin-left: auto;
+          
+        }
+
+        .nav-links ul {
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+           
+        }
+
+        .nav-links ul li {
+            padding: 8px 12px;
+            position: relative;
+        }
+
+        .nav-links ul li::after {
+            content: '';
+            width: 0;
+            height: 2px;
+            background-color: rgb(18, 177, 90);
+            display: block;
+            margin: auto;
+            transition: 0.5s;
+        }
+
+        .nav-links ul li:hover::after {
+            width: 100%;
+        }
+
+        .nav-links ul li a {
+            text-decoration: none;
+            color: #005AE0;
+            font-size: 14px;
+            font-family: sans-serif;
+        }
+
+        .fa-bars {
+            display: none;
+            color: #005AE0;
+            font-size: 28px;
+            cursor: pointer;
+        }
+
+        .text-box {
+            width: 90%;
+            color: #0c306c;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            text-transform: capitalize;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .text-box h1 {
+            font-size: 50px;
+        }
+
+        .text-box p {
+            margin: 10px 0 40px;
+            font-size: 14px;
+            color: #0c306c;
+        }
+
+        .hero-btn {
+            display: inline-block;
+            text-decoration: none;
+            color: #0c306c;
+            border: 1px solid #0c306c;
+            padding: 12px 34px;
+            background: transparent;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+
+        .hero-btn:hover {
+            background: rgb(159, 182, 172);
+            transition: 2s;
+        }
+        .menu-links{
+            visibility: hidden;
+        }
+
+        /* Courses Section */
+        .courses {
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: 600;
+        }
+
+        p {
+            color: #777;
+            font-size: 16px;
+            line-height: 22px;
+            padding: 10px;
+        }
+
+        .row {
+            margin-top: 5%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .course-col {
+            flex-basis: 31%;
+            background: #a5c2ca;
+            border-radius: 10px;
+            margin-bottom: 5%;
+            padding: 20px 12px;
+            box-sizing: border-box;
+            transition: 0.5s;
+            cursor: pointer;
+        }
+
+        .course-col h3 {
+            text-align: center;
+            font-weight: 600;
+            margin: 10px 0;
+        }
+
+        .course-col:hover {
+            box-shadow: 0 0 20px 0px rgba(13, 73, 141, 0.2);
+        }
+
+        /* Campus Section */
+        .campus {
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        .campus-col {
+            flex-basis: 32%;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .campus-col img {
+            width: 100%;
+            display: block;
+        }
+
+        .layer {
+            background: transparent;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: 0.5s;
+        }
+
+        .layer:hover {
+            background: rgba(43, 77, 230, 0.813);
+        }
+
+        .layer h3 {
+            width: 100%;
+            font-weight: 20px;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%);
+            position: absolute;
+            opacity: 0;
+            transition: 0.5s;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .layer:hover h3 {
+            bottom: 49%;
+            opacity: 1;
+        }
+
+        /* Facilities Section */
+        .facilities {
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        .facilities-col {
+            flex-basis: 31%;
+            border-radius: 10px;
+            margin-bottom: 5%;
+            text-align: left;
+        }
+
+        .facilities-col img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .facilities-col h3 {
+            margin-top: 16px;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            width: 80%;
+            margin: auto;
+            padding-top: 60px;
+            text-align: center;
+        }
+
+        .testimonials-col {
+            flex-basis: 44%;
+            border-radius: 10px;
+            margin-bottom: 5%;
+            text-align: left;
+            background: #80eaff80;
+            padding: 25px;
+            cursor: pointer;
+            display: flex;
+        }
+
+        .testimonials-col img {
+            height: 40px;
+            margin-left: 5px;
+            border-radius: 50%;
+            margin-right: 30px;
+            bottom:  50%;
+        }
+
+        .testimonials-col p {
+            padding: 0;
+        }
+
+        .testimonials-col h3 {
+            margin-top: 15px;
+            text-align: left;
+        }
+
+        .testimonials-col .fa {
+            color: #005AE0;
+        }
+
+        /* Call to Action Section */
+        .cta {
+            margin: 100px auto;
+            width: 80%;
+            background-image: url(images/banner2.jpg);
+            background-position: center;
+            background-color: cover;
+            border-radius: 10px;
+            border: #0c306c;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .cta h1 {
+            color: rgb(253, 254, 255);
+            margin-bottom: 40px;
+            padding: 0;
+        }
+
+        .hero-btn {
+            color: white;
+            background-color: #005AE0;
+            border: none;
+        }
+
+        /* Footer Section */
+        .footer {
+            width: 100%;
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        .footer h4 {
+            margin-bottom: 20px;
+            margin-top: 20px;
+            font-weight: 300;
+        }
+
+        .icons .fa {
+            color: #005AE0;
+            margin: 0 13px;
+            cursor: pointer;
+            padding: 12px 0;
+        }
+        .icons .fa:hover {
+           background: #777;
+            padding: 5x 5px;
+            width: 30px;
+            height: 40px;
+            border-radius: 10%;
+            transition: 2s;
+        }
+        .fa-heart-o {
+            color: #005AE0;
+        }
+        #p-p{
+            text-align: center;
+          
+        }
+        .pp{
+            background: gray;
+            color: #0f0f0f;
+        }
+        .p1{
+            color:  #fff;
+            font-size: 14px;
+            font-family: sans-serif;
+            font-style: bold;
+        }
+        #about{
+            background: #0f0f0f;
+        }
+        #about h4{
+            color: white;
+        }
+        #about p{
+            margin: 5px;
+        }
+        /* Media Queries for Responsive Design */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .nav-links ul {
+                flex-direction: column;
+                display: none;
+            }
+
+            .nav-links.active ul {
+                display: block;
+            }
+
+            .fa-bars {
+                display: block;
+            }
+
+            .text-box h1 {
+                font-size: 36px;
+            }
+
+            .row {
+                flex-direction: column;
+            }
+
+            .course-col, .campus-col, .facilities-col, .testimonials-col {
+                flex-basis: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header {
+                min-height: 80vh;
+            }
+
+            .text-box h1 {
+                font-size: 28px;
+            }
+
+            .hero-btn {
+                padding: 10px 20px;
+            }
+        }
+    
